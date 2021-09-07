@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import {api} from "../api"
 import { Link } from "react-router-dom";
 
 const YaziListesi = (props) => {
@@ -8,7 +8,7 @@ const YaziListesi = (props) => {
 
     useEffect(() => {
 
-        axios.get("https://react-yazi-yorum.herokuapp.com/posts")
+        api().get("/posts")
             .then(response => {
                 setYaziListesi(response.data)
             })
