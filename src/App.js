@@ -1,5 +1,4 @@
 
-import moment from "moment";
 import YaziListesi from "./components/YaziListesi"
 import YaziDetayi from "./components/YaziDetayi"
 import { BrowserRouter as Router, Route } from "react-router-dom"

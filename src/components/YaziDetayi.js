@@ -1,8 +1,5 @@
 import { api } from "../api";
-import { deprecationHandler } from "moment";
 import React, { useEffect, useState } from "react";
-import YaziListesi from "./YaziListesi";
-import { Button } from "semantic-ui-react";
 import YaziYorumlari from "./YaziYorumlari";
 import axios from "axios";
 import { Link } from "react-router-dom";
